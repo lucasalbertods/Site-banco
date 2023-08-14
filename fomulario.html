@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco BAM</title>
+    
+    <style>
+        fieldset{
+            width: 200px;
+        }
+        table, th, td{
+            border: 1px solid black;
+        }
+        table{
+            width: 100%;
+        }
+        
+    </style>
+    
+</head> 
+
+<body>
+    <!--Aqui começa o cabeçalho do site-->
+    <h1>Seja Bem-vindo ao banco BAM!</h1>
+    <h2>O Banco BAM tem orgulho de ser o primeiro banco no Brasil a  oferecer credito a pessoas negativadas!
+    </h2>
+    <h3>  Para abrir a sua conta você deve preencher fomulario abaixo!</h3>
+ <div>
+    <!--Aqui começa o formulário-->
+    <form action="comclusaocadastro.html">
+        <!--Aqui são as infomaçao pessoais do ciente-->
+        <fieldset>
+            <legend>Informações pessoais</legend>
+            Nome<br>
+            <input type="text" name="nome"><br>
+            Sobrenome<br>
+            <input type="text" name="Sobrenome"><br>
+            Telefone<br>
+            <input type="tel" name="telefone"><br>
+            Endereço<br>
+            <input type="tel" name="telefone"><br>
+            Numero
+            <input type="number" name="Numero"><br>
+            Complemento
+            <input type="text" name="Complemento"><br>
+            Gênero<br>
+            <select name="Gênero">
+                <option value="Masculino" selected>Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outros">Outro</option>
+            </select>
+
+
+        </fieldset>
+        <!--Aqui os estado civil do ciente-->
+<fieldset>
+       <legend>Estado civil</legend> 
+
+<input type="radio" name="estadocivil" value="casado" checked> Casado[a]<br>
+<input type="radio" name="estadocivil" value="solteiro"> Solteiro[a]<br>
+<input type="radio" name="estadocivil" value="viúvo"> Viúvo[a]<br>
+<input type="radio" name="estadocivil" value="Outros"> Outros<br>
+</fieldset>
+
+            <fieldset>
+                <!--aqui documentos de identificacao do cliente-->
+                <legend>Documentos de identificação </legend>
+                RG
+                <input type="tel" name="RG"><br>
+                CPF<br>
+                <input type="tel" name="CPF"><br>
+                Data de Nascimento<br>
+                <input type="date"><br>
+                Nome da Mãe<br>
+                <input type="text" name="nome da Mãe"><br>
+                Nome do Pai<br>
+                <input type="text" name="Nome do Pai"><br>
+
+            </fieldset>
+
+            <fieldset>
+                <!--aqui o tipo de conta que o cliente deseja ter-->
+            <legend>Tipo de conta</legend> 
+
+            <input type="radio" name="Tipo de conta" value="Pessoa física" checked> Pessoa física<br>
+            <input type="radio" name="Tipo de conta" value="Pessoa jurídica"> Pessoa jurídica<br>
+            </fieldset>
+
+
+            <fieldset>
+                <!--aqui oque o cliente deseja ter de funcões na conta-->
+                <legend>Preferência de conta</legend>
+                <input type="checkbox" name="Preferência de conta" value="credito">Credito<br> 
+                <input type="checkbox" name="Preferência de conta" value="Debito"> Debito<br>
+                <input type="checkbox" name="Preferência de conta" value="Polpança"> Polpança<br>
+                <input type="checkbox" name="Preferência de conta" value="conta corrente"> Conta Corrente<br>
+</fieldset>
+<!--Aqui fica opcao de corresponde a renda mensal do cliente>-->
+<fieldset>
+    <legend>Renda mensal (R$)</legend>
+    <ol type="A">
+        <li>500,00 a 1.000,00</li>
+        <li>1.000,00 a 1.500,00</li>
+        <li>1.500,00 a 2.000,00</li>
+        <li>2.000,00 a 3.500,00</li>
+        <li>Mais que 3.500,00</li>
+    </ol>
+    Marque a opção que corresponde a sua renda mensal:<br>
+    <input type="radio" name="Renda mensal (R$)" value="500,00 a 1.000,00" checked> A
+<input type="radio" name="Renda mensal (R$)" value="1.000,00 a 1.500,00"> B
+<input type="radio" name="Renda mensal (R$)" value="1.500,00 a 2.000,00"> C
+<input type="radio" name="Renda mensal (R$)" value="2.000,00 a 3.500,00"> D
+<input type="radio" name="Renda mensal (R$)" value="Mais que 3.500,00"> E
+</fieldset>
+
+<!--Aqui fica a caixa de sugestão de amigos que possivelmente pode se tornarem futuros clientes do banco-->
+<fieldset>
+    <textarea name="sugestao" rows="10" cols="25">Indique seus amigos para nós! </textarea><br>
+
+</fieldset>
+
+<fieldset>
+                      Email<br>
+        <input type="email"><br>
+        Senha<br>
+        <input type="password"><br>
+        <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <br>
+        </fieldset>
+
+    </form>
+    <br>
+    <p>Prezado cliente, será efetuado todas as Verificação necessária no sistema, dentro 24 horas será encaminhado um e-mail com a resposta da aprovação!</p>
+    <br>
+    <a href="pagina incial.html"><input type="submit" value="Voltar Para pagina incial"></a>
+    <!--Aqui fica os telefones úteis-->
+        
+            <table>
+                <caption><h4>Contatos do suporte:</h4></caption>
+                <tr>
+                    <th>Nome:</th>
+                    <th>Telefones:</th>
+                </tr>
+                <tr>
+                    <td>Juares (Gerente finaceiro) </td>
+                    <td>(041)11 9 9820-1578</td>
+                </tr>
+                <tr>
+                    <td>Rodinei (Gerente de sistemas)</td>
+                    <td>(014)13 9 8836-1745</td>
+                </tr>
+                <tr>
+                    <td>Ovidoria</td>
+                    <td>0800.016.8570</td>
+                </tr>
+                <tr>
+                    <td>SAC</td>
+                    <td>0800.055.6879</td>
+                </tr>
+            </table>
+          
+       
+  </form>
+</div>
+  <br>
+  © Banco BAM S/A - CNPJ 18.465.397/0001-87 SAUN QD 8 LT D, Asa Branca, Cianorte-PR, Brasil - CEP 5800-215
+ </body>
+</html>
